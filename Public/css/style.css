@@ -1,0 +1,357 @@
+/*------ En commun ------*/
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.eot') format('eot'), url('fonts/Roboto-Regular.ttf') format('ttf'), url('fonts/Roboto-Regular.woff') format('woff'), url('fonts/Roboto-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #efefef;
+}
+
+h1 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.soulignement {
+    width: 20vw;
+    min-width: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 5em;
+}
+
+@media screen and (max-width:425px) {
+    .soulignement {
+        min-width: 12vh;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.wrapper {
+    background-image: url('../img/Banniere 2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 250px;
+}
+
+.bg-primary {
+    background-color: #900606!important;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-weight: 900;
+    padding: 0;
+}
+
+.sticky-top {
+    z-index: 1;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    background: rgb(117, 8, 8);
+    color: white;
+    transition: all 0.2s;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(216, 216, 216);
+}
+
+.dropdown-menu {
+    background: #3e93cc;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: white;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient(80deg, rgba(62, 147, 204, 1) 0%, rgba(42, 95, 125, 1) 100%);
+    text-align: center;
+    margin-top: 5em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 3;
+}
+
+#iconesFooter {
+    color: #fefefe;
+    font-size: 1.5625rem;
+}
+
+#twitter {
+    padding: 5px;
+    background: #50abf1;
+    border: 1px solid rgb(121, 121, 121);
+    cursor: pointer;
+}
+
+#twitter:hover {
+    color: #50abf1;
+}
+
+#instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    padding: 5px;
+    border: 1px solid rgb(121, 121, 121);
+    cursor: pointer;
+}
+
+#instagram:hover {
+    color: #d6249f;
+}
+
+#facebook {
+    padding: 5px;
+    background: #1877f2;
+    border: 1px solid rgb(121, 121, 121);
+    cursor: pointer;
+}
+
+#facebook:hover {
+    color: #1877f2;
+}
+
+#iconesFooter i:hover {
+    cursor: pointer;
+    background: white;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    -webkit-box-shadow: 4px 4px 4px -1px #000000;
+    box-shadow: 4px 4px 4px -1px #000000;
+}
+
+#iconesFooter i {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 15%;
+}
+
+#iconesFooter a {
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 90%;
+}
+
+.container-fluid {
+    width: 70%;
+}
+
+.container-pages {
+    margin-top: 4em;
+}
+
+
+/*----- Accueil ------*/
+
+.container-index {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 50px;
+    padding-top: 120px;
+    line-height: 2.5;
+    border-radius: 10px;
+}
+
+.container-index:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow: 4px 4px 20px -1px #000000;
+    box-shadow: 4px 4px 20px -1px #000000;
+    transition: all 0.5s;
+}
+
+
+/*------- Manifeste -------*/
+
+.manif-chapters {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 50px;
+    padding-top: 120px;
+    line-height: 2.5;
+    border-radius: 10px;
+}
+
+.manif-chapters:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow: 4px 4px 20px -1px #000000;
+    box-shadow: 4px 4px 20px -1px #000000;
+    transition: all 0.5s;
+}
+
+#sommaire {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    background: #ce0b0b;
+    color: white;
+    border: 2px solid;
+    border-color: rgb(0, 0, 0);
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    z-index: 2;
+}
+
+#sommaire:hover {
+    transform: scale(1.05);
+    background: #d64848;
+    transition: 0.4s;
+}
+
+#mySidenav {
+    width: 0;
+}
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #900606;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+#mySidenav {
+    z-index: 2;
+}
+
+.sidenav #fermerSommaire {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/*------ Qui sommes-nous? --------*/
+
+.float-img {
+    float: right;
+}
+
+.img {
+    width: 30vw;
+    height: 30vw;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+.nous-pages {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 50px;
+    padding-top: 80px;
+    line-height: 2.5;
+    border-radius: 10px;
+}
+
+.nous-pages:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow: 4px 4px 20px -1px #000000;
+    box-shadow: 4px 4px 20px -1px #000000;
+    transition: all 0.5s;
+}
+
+
+/*------ Nous rejoindre ------*/
+
+.rejoindre {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 50px;
+    padding-top: 80px;
+    line-height: 2.5;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.rejoindre:hover {
+    transform: scale(1.02);
+    transition: all 0.5s;
+    -webkit-box-shadow: 4px 4px 20px -1px #000000;
+    box-shadow: 4px 4px 20px -1px #000000;
+}
+
+
+/*-----  Responsive  ------*/
+
+@media (max-width: 1442px) {
+    .container-fluid {
+        width: 85%;
+    }
+    .rejoindre {
+        width: 80%;
+        padding: 40px 10px 40px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        width: 100%;
+    }
+    .rejoindre {
+        width: 100%;
+        padding: 40px 10px 40px 10px;
+    }
+}
